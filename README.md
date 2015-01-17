@@ -3,12 +3,12 @@ Create custom map markers on your website using Google Maps and this simple Java
 
 Requires Google Maps API to also be included on page. 
 
-Configuration is simple.
+## Configuration is simple.
 1. Include the Maps API on your page. (https://developers.google.com/maps/documentation/javascript/tutorial)
 2. Include mapSrc.js from this repo on your page.
 3. Create a config object.
 
-Config object example:
+### Config object example:
 ```javascript
   var mapConfig = {
     centerPoint: {
