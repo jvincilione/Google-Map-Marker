@@ -1,0 +1,51 @@
+<!doctype html>
+<html style="width:100%; height:100%;">
+<head>
+    <title>Test Maps</title>
+</head>
+<body style="width:100%; height:100%;">
+    <div id="map-canvas" style="width:100%; height:100%;"></div>
+    <!-- you will need to set up the google api with a maps key -->
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+        // map markers config.
+        var mapConfig = {
+                centerPoint : {
+                    lat: 33.7496844,
+                    lng: -84.7516932
+                }, 
+                zoom : 15, 
+                markers : [
+                    {
+                        image : "/_/images/map_logo.png",
+                        title : "Lucien Consulting",
+                        latLng : {
+                            lat: 33.7496844,
+                            lng: -84.7516932
+                        },
+                        size : {
+                            w: 50,
+                            h: 76,
+                        },
+                        clickCallback : null
+                    },
+                    {
+                        image : "/_/images/project/gumbeauxs.png",
+                        title : "Gumbeauxs Cajun Restaurant",
+                        latLng : {
+                            lat: 33.7506764,
+                            lng: -84.7493308
+                        },
+                        size : {
+                            w: 50,
+                            h: 76,
+                        },
+                        clickCallback : null
+                    }
+                ],
+                elementId : 'map-canvas'
+            }
+    </script>
+    <script src="../map.min.js"></script>
+</body>
+</html>
