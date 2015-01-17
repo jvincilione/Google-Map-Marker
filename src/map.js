@@ -14,9 +14,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 */
 (function () {
     "use strict";
-    var map;
+    var map_marker = { version: "1.0" },
+        map;
     /**
-     * [initMap initializes map]
+     * [initMap initializes map with custom markers]
      * @param  {object}   centerPoint [lat, long coordinates (IE: {lat: 24.2131, lng: 14.45245})]
      * @param  {integer}  zoom        [Integer of zoom level - Defaults to 12]
      * @param  {array}    markers     [Array of Map Objects]
