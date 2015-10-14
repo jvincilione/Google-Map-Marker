@@ -1,4 +1,4 @@
-# Google-Map-Marker
+# Google Map Marker
 Create custom map markers on your website using Google Maps and this simple Javascript Plugin.
 
 Requires Google Maps API to also be included on page. 
