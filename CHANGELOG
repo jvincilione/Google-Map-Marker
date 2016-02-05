@@ -1,0 +1,14 @@
+1.2.0 - 
+    Change from JS to using Typescript. 
+    Change default marker to be an Orange Google Marker
+    Add "smoke-test"
+    Set up to work with NPM
+    Make options.centerPoint optional
+    Make options.markers.size optional
+    Break init method up into three methods
+    Add mapType option
+
+1.1.0 - 
+    Change from onload initialize to a class that's called however the user wants it
+    Add support for colored markers instead of just images
+    

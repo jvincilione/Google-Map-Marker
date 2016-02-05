@@ -3,37 +3,56 @@ Create custom map markers on your website using Google Maps and this simple Java
 
 Requires Google Maps API to also be included on page. 
 
-Demo here: http://lucienconsulting.com/projects/maps/
+## Install with NPM.
 
-## Configuration is simple.
-1. Include the Maps API on your page. (https://developers.google.com/maps/documentation/javascript/tutorial)
-2. Include map.min.js from this repo on your page.
-3. Create a config object.
+    `npm install google-map-marker --save`
 
-### Config object example:
-```javascript
-  var mapConfig = {
-    centerPoint: {
-        lat: 33.7496844,
-        lng: -84.7516932
-    }, 
-    zoom: 15, 
-    markers: [
-        {
-            image : "http://lucienconsulting.com/_/images/map_logo.png",
-            title : "Lucien Consulting",
-            latLng : {
+## Pre-requesite
+
+Include the Maps API on your page. (https://developers.google.com/maps/documentation/javascript/tutorial)
+
+## Creating map markers
+
+The markers are powered by a config object. Create the config object, instantiate and create the map.
+```
+        var config = {
+            centerPoint: {
                 lat: 33.7496844,
                 lng: -84.7516932
-            },
-            size : {
-                w: 50,
-                h: 76,
-            }
+            }, 
+            zoom: 15, 
+            markers: [
+                {
+                    marker : "http://lucienconsulting.com/_/images/map_logo.png", 
+                    title : "Lucien Consulting",
+                    latLng : {
+                        lat: 33.7496844,
+                        lng: -84.7516932
+                    },
+                    size : {
+                        w: 50,
+                        h: 76,
+                    }
+                }
+            ],
+            elementId: 'map-canvas'
         }
-    ],
-    elementId: 'map-canvas'
-  }
+
+        var myMap = new MapMarker(config);
+        myMap.createMap();
 ```
 
-The "markers" config array requires objects with a minimum requirement of having an image and coordinates. (latLng object). Theoretically, you can have as many markers as you need.
+## Options
+
+- `centerPoint`: object, containing lat and lng points. Optional (Will calculate the center if not supplied.)
+- `zoom` (default: 12): number, desired zoom level of map. Optional.
+- `elementId` (default: 'map-canvas'): string, of the desired element where you want your map to appear. Optional.
+- `markers`: array, marker objects. **Required**
+- `mapType` (default: 'road'): string, choice of `road` `satellite` `hybrid` `terrrain`. Optional.
+- `scrollWheel` (default: false): boolean, if true, allow zooming on map using scroll wheel. Optional.
+
+### Markers objects
+- `marker` (default: 'EE4116'): string, hex color or url for the map marker. Defaults to orange. Optional.
+- `title` (default: 'My Marker'): string, what you want the title to be. Optional.
+- `latLng`: object, containing lat and lng points. **Required**
+- `size` (default if img {w:50, h:50}): object, width and height of image. If using a color, this option is ignored. Optional.

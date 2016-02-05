@@ -1,0 +1,36 @@
+{
+  "name": "google-map-marker",
+  "version": "1.1.1",
+  "description": "Add custom markers to Google Maps",
+  "main": "./lib/map.js",
+  "typings": "./lib/map.d.ts",
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "test": "tap ./lib/map.test.js --reporter=spec",
+    "tsc": "tsc",
+    "ugilfy": "uglifyjs lib/map.js -m -o map.min.js"
+  },
+  "engines": {
+    "googleMapsApi": "3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucien-Consulting/Google-Map-Marker.git"
+  },
+  "author": {
+    "Justin Johns": "justin@lucienconsulting.com",
+    "Jacques Vincilione": "jacques@lucienconsulting.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lucien-Consulting/Google-Map-Marker/issues"
+  },
+  "devDependencies": {
+    "tap": "^5.4.2",
+    "tslint": "^3.3.0",
+    "typescript": "^1.8.0-dev.20160106"
+  },
+  "homepage": "https://github.com/Lucien-Consulting/Google-Map-Marker#readme"
+}

@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.3.12
+3 info using node@v5.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/Jacques/Desktop/GitHub Repos/map',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/Jacques/.npm/google-map-marker/1.1.1/package.tgz not in flight; packing
+9 info lifecycle google-map-marker@1.1.1~prepublish: google-map-marker@1.1.1
+10 silly lifecycle google-map-marker@1.1.1~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/Jacques/.npm/google-map-marker/1.1.1/package.tgz',
+11 verbose tar pack   '/Users/Jacques/Desktop/GitHub Repos/map' ]
+12 verbose tarball /Users/Jacques/.npm/google-map-marker/1.1.1/package.tgz
+13 verbose folder /Users/Jacques/Desktop/GitHub Repos/map
+14 verbose addLocalTarball adding from inside cache /Users/Jacques/.npm/google-map-marker/1.1.1/package.tgz
+15 silly cache afterAdd google-map-marker@1.1.1
+16 verbose afterAdd /Users/Jacques/.npm/google-map-marker/1.1.1/package/package.json not in flight; writing
+17 verbose afterAdd /Users/Jacques/.npm/google-map-marker/1.1.1/package/package.json written
+18 silly publish { name: 'google-map-marker',
+18 silly publish   version: '1.1.1',
+18 silly publish   description: 'Add custom markers to Google Maps',
+18 silly publish   main: './lib/map.js',
+18 silly publish   typings: './lib/map.d.ts',
+18 silly publish   directories: { lib: './lib' },
+18 silly publish   scripts:
+18 silly publish    { test: 'tap ./lib/map.test.js --reporter=spec',
+18 silly publish      tsc: 'tsc',
+18 silly publish      browserify: 'browserify lib/map.js | uglifyjs > map.min.js' },
+18 silly publish   engines: { googleMapsApi: '3' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/Lucien-Consulting/Google-Map-Marker.git' },
+18 silly publish   author: '',
+18 silly publish   license: 'MIT',
+18 silly publish   bugs: { url: 'https://github.com/Lucien-Consulting/Google-Map-Marker/issues' },
+18 silly publish   devDependencies:
+18 silly publish    { tap: '^5.4.2',
+18 silly publish      tslint: '^3.3.0',
+18 silly publish      typescript: '^1.8.0-dev.20160106' },
+18 silly publish   homepage: 'https://github.com/Lucien-Consulting/Google-Map-Marker#readme',
+18 silly publish   readme: '# Google Map Marker\nCreate custom map markers on your website using Google Maps and this simple Javascript Plugin.\n\nRequires Google Maps API to also be included on page. \n\n## Install with NPM.\n\n    `npm install google-map-marker --save`\n\n## Pre-requesite\n\nInclude the Maps API on your page. (https://developers.google.com/maps/documentation/javascript/tutorial)\n\n## Creating map markers\n\nThe markers are powered by a config object. Create the config object, instantiate and create the map.\n```\n        var config = {\n            centerPoint: {\n                lat: 33.7496844,\n                lng: -84.7516932\n            }, \n            zoom: 15, \n            markers: [\n                {\n                    marker : "http://lucienconsulting.com/_/images/map_logo.png", \n                    title : "Lucien Consulting",\n                    latLng : {\n                        lat: 33.7496844,\n                        lng: -84.7516932\n                    },\n                    size : {\n                        w: 50,\n                        h: 76,\n                    }\n                }\n            ],\n            elementId: \'map-canvas\'\n        }\n\n        var myMap = new MapMarker(config);\n        myMap.createMap();\n```\n\n## Options\n\n- `centerPoint`: object, containing lat and lng points. Optional (Will calculate the center if not supplied.)\n- `zoom` (default: 12): number, desired zoom level of map. Optional.\n- `elementId` (default: \'map-canvas\'): string, of the desired element where you want your map to appear. Optional.\n- `markers`: array, marker objects. **Required**\n- `mapType` (default: \'road\'): string, choice of `road` `satellite` `hybrid` `terrrain`. Optional.\n- `scrollWheel` (default: false): boolean, if true, allow zooming on map using scroll wheel. Optional.\n\n### Markers objects\n- `marker` (default: \'EE4116\'): string, hex color or url for the map marker. Defaults to orange. Optional.\n- `title` (default: \'My Marker\'): string, what you want the title to be. Optional.\n- `latLng`: object, containing lat and lng points. **Required**\n- `size` (default if img {w:50, h:50}): object, width and height of image. If using a color, this option is ignored. Optional.',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'e5d18d2280ab1799357516f8403b45b59b516ba4',
+18 silly publish   _id: 'google-map-marker@1.1.1',
+18 silly publish   _shasum: '741aa553f8c37338b2f47ba4da8351e0233596e2',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name google-map-marker
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/google-map-marker
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/Jacques/.npm/google-map-marker/1.1.1/package.tgz
+26 verbose request uri https://registry.npmjs.org/google-map-marker
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 1:04:59 AM
+29 verbose request using bearer token for auth
+30 verbose request id 94a066a17271eda1
+31 http request PUT https://registry.npmjs.org/google-map-marker
+32 http 403 https://registry.npmjs.org/google-map-marker
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Fri, 05 Feb 2016 06:05:00 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-iad2148-IAD',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1454652299.794567,VS0,VE667' }
+34 verbose request invalidating /Users/Jacques/.npm/registry.npmjs.org/google-map-marker on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 1.1.1." : google-map-marker
+36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:100:13)
+36 verbose stack     at Request.emit (events.js:185:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:95:20)
+36 verbose stack     at Request.emit (events.js:182:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid google-map-marker
+39 verbose cwd /Users/Jacques/Desktop/GitHub Repos/map
+40 error Darwin 15.3.0
+41 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+42 error node v5.5.0
+43 error npm  v3.3.12
+44 error code E403
+45 error "You cannot publish over the previously published version 1.1.1." : google-map-marker
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
