@@ -3,7 +3,7 @@
 */
 declare var google:any;
 class MapMarker {
-    version:string = '1.1.1';
+    version:string = '1.2.1';
     map:any;
     centerPoint:any;
     zoom:number = 12;
@@ -28,6 +28,7 @@ class MapMarker {
         this.markers = options.markers;
         this.elementId = options.elementId;
         this.mapType = options.mapType;
+        this.scrollWheel = options.scrollWheel;
     }
 
     /**
@@ -72,7 +73,7 @@ class MapMarker {
         let mapOptions = {
             center: new google.maps.LatLng(this.centerPoint.lat, this.centerPoint.lng),
             mapTypeId: mapType,
-            scrollwheel: this.scrollwheel,
+            scrollwheel: this.scrollWheel,
             zoom: this.zoom
         };
 

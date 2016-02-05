@@ -1,6 +1,6 @@
 {
   "name": "google-map-marker",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "Add custom markers to Google Maps",
   "main": "./lib/map.js",
   "typings": "./lib/map.d.ts",
