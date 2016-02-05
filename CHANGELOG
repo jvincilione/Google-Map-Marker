@@ -1,4 +1,4 @@
-1.2.0 - 
+1.2.0-2 - 
     Change from JS to using Typescript. 
     Change default marker to be an Orange Google Marker
     Add "smoke-test"
@@ -7,6 +7,7 @@
     Make options.markers.size optional
     Break init method up into three methods
     Add mapType option
+    Fix a couple of typos in package.json and in the readme. update version number for npm release.
 
 1.1.0 - 
     Change from onload initialize to a class that's called however the user wants it

@@ -7,7 +7,7 @@ declare class MapMarker {
     elementId: string;
     markers: any;
     mapType: string;
-    scrollwheel: boolean;
+    scrollWheel: boolean;
     /**
      * @constructor
      * mapMarker initializes map with custom markers

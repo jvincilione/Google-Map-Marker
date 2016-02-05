@@ -3,14 +3,14 @@
 */
 declare var google:any;
 class MapMarker {
-    version:string = '1.2.1';
+    version:string = '1.2.2';
     map:any;
     centerPoint:any;
     zoom:number = 12;
     elementId:string = 'map-canvas';
     markers:any;
     mapType:string = 'road';
-    scrollwheel:boolean = false;
+    scrollWheel:boolean = false;
 
     /**
      * @constructor
