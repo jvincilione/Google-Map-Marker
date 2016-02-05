@@ -5,7 +5,7 @@ Requires Google Maps API to also be included on page.
 
 ## Install with NPM.
 
-    `npm install google-map-marker --save`
+    npm install google-map-marker --save
 
 ## Pre-requesite
 
