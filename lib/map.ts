@@ -2,8 +2,9 @@
 ** Created by Justin Johns, Jacques Vincilione - Lucien Consulting, INC
 */
 declare var google:any;
+declare var exports:any;
 class MapMarker {
-    version:string = '1.2.2';
+    version:string = '1.2.3';
     map:any;
     centerPoint:any;
     zoom:number = 12;
@@ -161,4 +162,10 @@ class MapMarker {
             i++;
         }
     }
+}
+// this is for node, and is specifically for testing,
+// it prevents an error in the browser.
+if (typeof exports !== 'undefined') {
+    // this has to be in es5 or typescript ignores the line... annoying
+    exports.MapMarker = MapMarker;
 }

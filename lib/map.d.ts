@@ -1,4 +1,5 @@
 declare var google: any;
+declare var exports: any;
 declare class MapMarker {
     version: string;
     map: any;
