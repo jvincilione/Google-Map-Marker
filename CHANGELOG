@@ -1,3 +1,6 @@
+1.2.3 -
+    Added tests and node export support
+
 1.2.0-2 - 
     Change from JS to using Typescript. 
     Change default marker to be an Orange Google Marker
