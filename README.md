@@ -1,6 +1,6 @@
 [![bitHound Overall Score](https://www.bithound.io/github/Lucien-Consulting/Google-Map-Marker/badges/score.svg)](https://www.bithound.io/github/Lucien-Consulting/Google-Map-Marker) [![bitHound Code](https://www.bithound.io/github/Lucien-Consulting/Google-Map-Marker/badges/code.svg)](https://www.bithound.io/github/Lucien-Consulting/Google-Map-Marker) [![bitHound Dev Dependencies](https://www.bithound.io/github/Lucien-Consulting/Google-Map-Marker/badges/devDependencies.svg)](https://www.bithound.io/github/Lucien-Consulting/Google-Map-Marker/master/dependencies/npm)
 
-[![NPM](https://nodei.co/npm/<package>.png?compact=true)](https://npmjs.org/package/<package>)
+[![NPM](https://nodei.co/npm/google-map-marker.png?compact=true)](https://npmjs.org/package/google-map-marker)
 
 # Google Map Marker
 Create custom map markers on your website using Google Maps and this simple Javascript Plugin.
